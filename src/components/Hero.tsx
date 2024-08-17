@@ -15,10 +15,10 @@ const Hero: React.FC = () => {
       </h1>
       <p className="text-lg md:text-2xl mb-4">
         A Passionate{" "}
-        <span className="text-indigo-500">MERN Stack Developer</span>
+        <span className="text-indigo-500">Full Stack Developer </span>
       </p>
       <a
-        href="https://drive.google.com/file/d/1rTYJhGVllAoBq5T9nYfr8ezuNveFZmpT/view?usp=sharing"
+        href="https://drive.google.com/file/d/1rTYJhGVllAoB5T9nYfr8ezuNveFZmpT/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-indigo-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:bg-indigo-600 transition duration-300"
