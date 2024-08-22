@@ -1,39 +1,68 @@
-import projectOneImg from "../assets/project1.png";
 import React from "react";
+import { motion } from "framer-motion";
+import projectOneImg from "../assets/project1.png";
+import projectTwoImg from "../assets/projec2.png";
+import projectThreeImg from "../assets/project3.png";
 
 const projects = [
   {
-    title: "Project One",
+    title: "Chatify",
     description:
-      "A brief description of Project One, including key features and technologies used.",
-    techStack: "React, Node.js, Express, MongoDB",
-    liveLink: "https://example.com",
+      "Developed chat app which allows users to send messages and see user's online status. Added JWT authentication.",
+    techStack: "React, Tailwind, Node.js, Express, MongoDB, Socket.io",
+    liveLink: "https://chatify-teal.vercel.app/",
     githubLink: "https://github.com/NirbhaySingh74/MERN-CHAT-APP",
     imageUrl: projectOneImg,
   },
   {
-    title: "Project Two",
+    title: "Shopeasy",
     description:
-      "A brief description of Project Two, including key features and technologies used.",
-    techStack: "Vue, Laravel, MySQL",
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example/project-two",
-    imageUrl: "https://via.placeholder.com/400",
+      "Developed a web app that empowers users to sell products. Dedicated Admin Dashboard for managing all the products listed by admin.",
+    techStack: "React, Tailwind, Node, Express, MongoDB, JWT",
+    liveLink: "https://shopeasy-mu.vercel.app/",
+    githubLink: "https://github.com/NirbhaySingh74/Ecommerce-MERN",
+    imageUrl: projectTwoImg,
+  },
+  {
+    title: "Picsearch",
+    description:
+      "Developed Picsearch which allows users to search different types of images using the Unsplash API.",
+    techStack: "React, Tailwind",
+    liveLink: "https://picsearch-two.vercel.app/",
+    githubLink: "https://github.com/NirbhaySingh74/unsplash",
+    imageUrl: projectThreeImg,
   },
 ];
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="bg-gray-800 text-white py-16 px-4">
+    <motion.section
+      id="projects"
+      className="bg-gray-800 text-white py-16 px-4"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      viewport={{ once: true }}
+    >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           My Projects
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
               className="flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 * index }}
+              viewport={{ once: true }}
             >
               {/* Left Side */}
               <div className="p-6 md:w-1/2">
@@ -63,17 +92,21 @@ const Projects: React.FC = () => {
               </div>
               {/* Right Side */}
               <div className="md:w-1/2">
-                <img
+                <motion.img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full max-h-80 object-contain"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
                 />
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
