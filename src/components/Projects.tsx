@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Chatify",
     description:
-      "Developed chat app which allows users to send messages and see user's online status. Added JWT authentication.",
+      "Developed chat app which allows users to send messages and see users' online status. Added JWT authentication.",
     techStack: "React, Tailwind, Node.js, Express, MongoDB, Socket.io",
     liveLink: "https://chatify-teal.vercel.app/",
     githubLink: "https://github.com/NirbhaySingh74/MERN-CHAT-APP",
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
   return (
     <motion.section
       id="projects"
-      className="bg-gray-800 text-white py-16 px-4"
+      className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-16 px-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          className="text-3xl md:text-4xl font-bold mb-12 text-center text-indigo-500"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden"
+              className="flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 * index }}
@@ -66,12 +66,29 @@ const Projects: React.FC = () => {
             >
               {/* Left Side */}
               <div className="p-6 md:w-1/2">
-                <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-                <p className="text-lg mb-4">{project.description}</p>
-                <p className="text-lg mb-4">
+                <h3 className="text-2xl font-semibold mb-4 text-indigo-400">
+                  {project.title}
+                </h3>
+                <p className="text-lg mb-4 text-gray-300">
+                  {project.description}
+                </p>
+                <p className="text-lg mb-4 text-gray-400">
                   <strong>Tech Stack:</strong> {project.techStack}
                 </p>
-                <div className="flex flex-col space-y-2">
+              </div>
+              {/* Right Side */}
+              <div className="md:w-1/2 flex flex-col">
+                <motion.img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full max-h-80 object-cover transition-transform duration-300 transform hover:scale-105"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                />
+                {/* Links below the image */}
+                <div className="flex flex-col space-y-2 p-6">
                   <a
                     href={project.liveLink}
                     target="_blank"
@@ -89,18 +106,6 @@ const Projects: React.FC = () => {
                     GitHub Link
                   </a>
                 </div>
-              </div>
-              {/* Right Side */}
-              <div className="md:w-1/2">
-                <motion.img
-                  src={project.imageUrl}
-                  alt={project.title}
-                  className="w-full max-h-80 object-contain"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: true }}
-                />
               </div>
             </motion.div>
           ))}
