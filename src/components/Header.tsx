@@ -23,20 +23,21 @@ const Header: React.FC = () => {
               About
             </a>
           </li>
-          <li>
-            <a
-              href="#experience"
-              className="hover:text-indigo-500 transition duration-300"
-            >
-              Experience
-            </a>
-          </li>
+
           <li>
             <a
               href="#projects"
               className="hover:text-indigo-500 transition duration-300"
             >
               Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              className="hover:text-indigo-500 transition duration-300"
+            >
+              Skills
             </a>
           </li>
           <li>

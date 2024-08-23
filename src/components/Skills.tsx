@@ -2,10 +2,24 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skills = {
-  frontend: ["React", "Next.js", "Tailwind CSS", "JavaScript", "TypeScript"],
-  backend: ["Node.js", "Express", "MongoDB", "PostgreSQL", "Socket.io"],
-  tools: ["Git", "GitHub", "Docker", "Vercel", "Postman"],
-} as const;
+  frontend: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Tailwind CSS",
+    "TypeScript",
+  ],
+  backend: [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
+    "Socket.io",
+    "Prisma",
+  ],
+  tools: ["Git", "GitHub", "Docker", "Vercel", "Postman", "AWS"],
+};
 
 type SkillCategory = typeof skills;
 

@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Chatify",
     description:
-      "Developed chat app which allows users to send messages and see users' online status. Added JWT authentication.",
+      "Developed chat app which allows users to send messages and see users' online status.",
     techStack: "React, Tailwind, Node.js, Express, MongoDB, Socket.io",
     liveLink: "https://chatify-teal.vercel.app/",
     githubLink: "https://github.com/NirbhaySingh74/MERN-CHAT-APP",
@@ -16,8 +16,7 @@ const projects = [
   },
   {
     title: "Shopeasy",
-    description:
-      "Developed a web app that empowers users to sell products. Dedicated Admin Dashboard for managing all the products listed by admin.",
+    description: "Developed a web app that empowers users to sell products. ",
     techStack: "React, Tailwind, Node, Express, MongoDB, JWT",
     liveLink: "https://shopeasy-mu.vercel.app/",
     githubLink: "https://github.com/NirbhaySingh74/Ecommerce-MERN",
