@@ -23,9 +23,10 @@ const About: React.FC = () => {
           background in building dynamic and responsive web applications. I have
           experience in creating full-stack applications using modern
           technologies and frameworks, and I'm always eager to learn and adopt
-          to new challenges.
+          to new challenges. So, if you have something cool to build feel free
+          to reach out!!
         </motion.p>
-        <motion.p
+        {/* <motion.p
           className="text-lg md:text-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +36,7 @@ const About: React.FC = () => {
           strive to deliver high-quality solutions that solve real-world
           problems. Let's connect and explore how we can collaborate on exciting
           projects!
-        </motion.p>
+        </motion.p> */}
       </div>
     </section>
   );
