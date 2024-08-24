@@ -22,7 +22,7 @@ const About: React.FC = () => {
           I'm Nirbhay, a passionate Full Stack Developer with a strong
           background in building dynamic and responsive web applications. I have
           experience in creating full-stack applications using modern
-          technologies and frameworks, and I'm always eager to learn and adapt
+          technologies and frameworks, and I'm always eager to learn and adopt
           to new challenges.
         </motion.p>
         <motion.p
