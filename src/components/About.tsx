@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="py-16 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
+      className="py-8 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
     >
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2

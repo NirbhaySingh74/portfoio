@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
   return (
     <motion.section
       id="projects"
-      className="py-16 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
+      className="py-8 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
