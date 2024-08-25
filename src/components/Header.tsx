@@ -14,9 +14,12 @@ const Header: React.FC = () => {
 
   return (
     <header className="w-full py-4 fixed top-0 left-0 z-10 shadow-md bg-[var(--background-color)] text-[var(--text-color)]">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex justify-between items-center relative">
+        {/* Toggle button */}
         <button
-          className="text-[var(--text-color)] md:hidden"
+          className={`text-[var(--text-color)] md:hidden ${
+            menuOpen ? "absolute top-4 right-4" : ""
+          }`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -53,6 +56,7 @@ const Header: React.FC = () => {
           )}
         </button>
 
+        {/* Navigation */}
         <nav
           className={`${
             menuOpen ? "block" : "hidden"
@@ -107,6 +111,7 @@ const Header: React.FC = () => {
           </ul>
         </nav>
 
+        {/* Theme Toggle Button */}
         <div className="ml-auto">
           <div onClick={handleNavLinkClick}>
             <ThemeToggleButton />
