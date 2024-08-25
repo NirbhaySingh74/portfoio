@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import projectOneImg from "../assets/project1.png";
 import projectTwoImg from "../assets/projec2.png";
 import projectThreeImg from "../assets/project3.png";
+import projectFour from "../assets/project4.png";
 
 const projects = [
   {
@@ -31,13 +32,22 @@ const projects = [
     githubLink: "https://github.com/NirbhaySingh74/unsplash",
     imageUrl: projectThreeImg,
   },
+  {
+    title: "Portfolio",
+    description:
+      "A sleek, professionally crafted portfolio designed to make a lasting impression with a seamless user experience.",
+    techStack: "React, Tailwind, Framer Motion",
+    liveLink: "https://nirbhayportfolio.vercel.app/",
+    githubLink: "https://github.com/NirbhaySingh74/portfoio",
+    imageUrl: projectFour,
+  },
 ];
 
 const Projects: React.FC = () => {
   return (
     <motion.section
       id="projects"
-      className="py-8 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
+      className="py-12 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -45,7 +55,7 @@ const Projects: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-12 text-indigo-500"
+          className="text-3xl md:text-4xl font-bold mb-12 text-indigo-500 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -85,7 +95,7 @@ const Projects: React.FC = () => {
                   viewport={{ once: true }}
                 />
                 {/* Links below the image */}
-                <div className="flex flex-col space-y-2 p-6">
+                <div className="flex flex-col space-y-2 p-6 pb-4">
                   <a
                     href={project.liveLink}
                     target="_blank"
