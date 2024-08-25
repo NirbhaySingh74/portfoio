@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "Shopeasy",
-    description: "Developed a web app that empowers users to sell products. ",
+    description: "Developed a web app that empowers users to sell products.",
     techStack: "React, Tailwind, Node, Express, MongoDB, JWT",
     liveLink: "https://shopeasy-mu.vercel.app/",
     githubLink: "https://github.com/NirbhaySingh74/Ecommerce-MERN",
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
   return (
     <motion.section
       id="projects"
-      className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-16 px-4"
+      className="py-16 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-12 text-center text-indigo-500"
+          className="text-3xl md:text-4xl font-bold mb-12 text-indigo-500"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="flex flex-col md:flex-row bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="flex flex-col md:flex-row bg-[var(--card-background-color)] rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 * index }}
@@ -68,9 +68,7 @@ const Projects: React.FC = () => {
                 <h3 className="text-2xl font-semibold mb-4 text-indigo-400">
                   {project.title}
                 </h3>
-                <p className="text-lg mb-4 text-gray-300">
-                  {project.description}
-                </p>
+                <p className="text-lg mb-4">{project.description}</p>
                 <p className="text-lg mb-4 text-gray-400">
                   <strong>Tech Stack:</strong> {project.techStack}
                 </p>
