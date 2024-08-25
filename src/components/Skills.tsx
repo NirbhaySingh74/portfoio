@@ -35,7 +35,7 @@ const Skills: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-12 text-indigo-500"
+          className="text-3xl md:text-4xl font-bold mb-12 text-indigo-500 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -54,7 +54,7 @@ const Skills: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.2 * index }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-2xl font-semibold mb-4 text-indigo-400 capitalize">
+                <h3 className="text-2xl font-semibold mb-4 text-indigo-400 capitalize text-center">
                   {category}
                 </h3>
                 <ul className="space-y-2">
