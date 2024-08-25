@@ -3,6 +3,7 @@
   --text-color: #000000;
   --card-background-color: #ffffff;
   --item-background-color: #e0e0e0;
+  --hover-color: #4c51bf;
 }
 
 [data-theme="dark"] {
@@ -10,6 +11,7 @@
   --text-color: #e0e0e0;
   --card-background-color: #2a2a2a;
   --item-background-color: #333333;
+  --hover-color: #9f7aea;
 }
 
 body,
@@ -24,10 +26,7 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-:root {
-  --hover-color: #4c51bf;
-}
-
-[data-theme="dark"] {
-  --hover-color: #9f7aea;
+/* Example for hover effects */
+a:hover {
+  color: var(--hover-color);
 }
