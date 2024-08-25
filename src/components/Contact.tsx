@@ -33,16 +33,14 @@ const Contact: React.FC = () => {
 
       if (response.ok) {
         setSubmitted(true);
-        setFormState({ name: "", email: "", message: "" }); // Reset form fields
-        setError(""); // Clear any previous errors
+        setFormState({ name: "", email: "", message: "" });
+        setError("");
       } else {
         throw new Error("Network response was not ok.");
       }
     } catch (error) {
-      setError(
-        "There was a problem submitting the form. Please try again.",
-        error
-      );
+      console.log(error);
+      setError("There was a problem submitting the form. Please try again.");
     }
   };
 

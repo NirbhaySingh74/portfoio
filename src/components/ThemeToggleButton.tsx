@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 const ThemeToggleButton: React.FC = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  // Default to "dark" theme if there's no theme set in localStorage
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -10,7 +11,7 @@ const ThemeToggleButton: React.FC = () => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
 
   return (
