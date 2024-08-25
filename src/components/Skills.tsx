@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
   return (
     <motion.section
       id="skills"
-      className="bg-gradient-to-bl from-gray-800 to-gray-900 text-white py-16 px-4"
+      className="bg-gradient-to-bl from-[var(--background-dark)] to-[var(--background-dark)] text-[var(--text-color)] py-16 px-4"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -35,7 +35,7 @@ const Skills: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold mb-12 text-center text-indigo-500"
+          className="text-3xl md:text-4xl font-bold mb-12 text-indigo-500"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -48,7 +48,7 @@ const Skills: React.FC = () => {
             (category, index) => (
               <motion.div
                 key={index}
-                className="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-[var(--card-background-color)] rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 * index }}
@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
                   {skills[category].map((skill, i) => (
                     <li
                       key={i}
-                      className="bg-gray-800 text-white px-4 py-2 rounded-full text-center"
+                      className="bg-[var(--item-background-color)] text-[var(--text-color)] px-4 py-2 rounded-full text-center"
                     >
                       {skill}
                     </li>

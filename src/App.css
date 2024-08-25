@@ -2,12 +2,14 @@
   --background-color: #f9f9f9;
   --text-color: #000000;
   --card-background-color: #ffffff;
+  --item-background-color: #e0e0e0;
 }
 
 [data-theme="dark"] {
   --background-color: #1a1a1a;
   --text-color: #e0e0e0;
   --card-background-color: #2a2a2a;
+  --item-background-color: #333333;
 }
 
 body,
