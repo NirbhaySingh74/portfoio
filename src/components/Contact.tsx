@@ -39,7 +39,10 @@ const Contact: React.FC = () => {
         throw new Error("Network response was not ok.");
       }
     } catch (error) {
-      setError("There was a problem submitting the form. Please try again.");
+      setError(
+        "There was a problem submitting the form. Please try again.",
+        error
+      );
     }
   };
 
