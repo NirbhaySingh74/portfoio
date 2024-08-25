@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="bg-gray-900 text-white py-16 px-4">
+    <section
+      id="about"
+      className="py-16 px-4 bg-[var(--background-color)] text-[var(--text-color)]"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-6"
