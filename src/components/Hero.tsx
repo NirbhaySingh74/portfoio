@@ -4,11 +4,11 @@ import profilePic from "../assets/profilePic.png";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-black text-white h-screen flex flex-col justify-center items-center text-center px-4">
+    <section className="h-screen flex flex-col justify-center items-center text-center px-4 bg-[var(--background-color)] text-[var(--text-color)]">
       <motion.img
         src={profilePic}
         alt="Profile"
-        className="w-32 h-32 md:w-48 md:h-48 rounded-full mb-6 border-4 border-gray-800 shadow-lg"
+        className="w-32 h-32 md:w-48 md:h-48 rounded-full mb-6 border-4 border-[var(--border-color)] shadow-lg"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}

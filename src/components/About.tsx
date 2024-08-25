@@ -26,17 +26,6 @@ const About: React.FC = () => {
           to new challenges. So, if you have something cool to build feel free
           to reach out!!
         </motion.p>
-        {/* <motion.p
-          className="text-lg md:text-xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          With a focus on clean, maintainable code and user-centric design, I
-          strive to deliver high-quality solutions that solve real-world
-          problems. Let's connect and explore how we can collaborate on exciting
-          projects!
-        </motion.p> */}
       </div>
     </section>
   );
