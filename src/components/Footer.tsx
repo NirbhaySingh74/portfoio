@@ -62,6 +62,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="https://x.com/nirbhay_74"
+                  target="_blank"
                   className="hover:text-indigo-500 transition duration-300"
                 >
                   <FaTwitter />
@@ -70,6 +71,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="https://github.com/NirbhaySingh74"
+                  target="_blank"
                   className="hover:text-indigo-500 transition duration-300"
                 >
                   <FaGithub />
@@ -78,6 +80,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="https://www.linkedin.com/in/nirbhay-singh-b8a169207/"
+                  target="_blank"
                   className="hover:text-indigo-500 transition duration-300"
                 >
                   <FaLinkedinIn />
