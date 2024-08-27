@@ -61,16 +61,16 @@ const Contact: React.FC = () => {
       >
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-12 text-center text-indigo-500"
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
           Contact Me
         </motion.h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <motion.div
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
             <label htmlFor="name" className="block text-sm font-medium">
@@ -87,8 +87,8 @@ const Contact: React.FC = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ x: 50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
             <label htmlFor="email" className="block text-sm font-medium">
@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
             />
           </motion.div>
           <motion.div
-            initial={{ y: 50, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
