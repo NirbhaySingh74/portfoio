@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({
@@ -45,16 +46,33 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section
+    <motion.section
       id="contact"
       className="bg-gradient-to-bl from-[var(--background-dark)] to-[var(--background-dark)] text-[var(--text-color)] py-8 px-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
-      <div className="max-w-4xl mx-auto bg-[var(--background-light)] p-8 rounded-lg shadow-lg">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-indigo-500">
+      <motion.div
+        className="max-w-4xl mx-auto bg-[var(--background-light)] p-8 rounded-lg shadow-lg"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold mb-12 text-center text-indigo-500"
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           Contact Me
-        </h2>
+        </motion.h2>
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
             <label htmlFor="name" className="block text-sm font-medium">
               Name
             </label>
@@ -67,8 +85,12 @@ const Contact: React.FC = () => {
               required
               className="w-full px-4 py-2 mt-1 bg-[var(--input-background)] text-[var(--text-color)] rounded-md border border-[var(--border-color)] focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
             />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
             <label htmlFor="email" className="block text-sm font-medium">
               Email
             </label>
@@ -81,8 +103,12 @@ const Contact: React.FC = () => {
               required
               className="w-full px-4 py-2 mt-1 bg-[var(--input-background)] text-[var(--text-color)] rounded-md border border-[var(--border-color)] focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
             />
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
             <label htmlFor="message" className="block text-sm font-medium">
               Message
             </label>
@@ -95,28 +121,42 @@ const Contact: React.FC = () => {
               required
               className="w-full px-4 py-2 mt-1 bg-[var(--input-background)] text-[var(--text-color)] rounded-md border border-[var(--border-color)] focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
             ></textarea>
-          </div>
-          <button
+          </motion.div>
+          <motion.button
             type="submit"
             className="w-full bg-indigo-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-indigo-600 transition duration-300 btn-submit"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             Send Message
-          </button>
+          </motion.button>
         </form>
 
         {submitted && (
-          <div id="successMessage" className="text-green-500 mt-4">
+          <motion.div
+            id="successMessage"
+            className="text-green-500 mt-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             Thank you for your message! I'll get back to you soon.
-          </div>
+          </motion.div>
         )}
 
         {error && (
-          <div id="errorMessage" className="text-red-500 mt-4">
+          <motion.div
+            id="errorMessage"
+            className="text-red-500 mt-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             {error}
-          </div>
+          </motion.div>
         )}
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
