@@ -19,7 +19,7 @@ const projects = [
     title: "Shopeasy",
     description:
       "Developed a web app that empowers users to sell products. Dedicated Admin Dashboard to manage the products",
-    techStack: "React, Tailwind, Node, Express, MongoDB, JWT",
+    techStack: "React, Tailwind, Node, Express, MongoDB, Auth",
     liveLink: "https://shopeasy-mu.vercel.app/",
     githubLink: "https://github.com/NirbhaySingh74/Ecommerce-MERN",
     imageUrl: projectTwoImg,
