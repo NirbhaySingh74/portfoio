@@ -4,7 +4,7 @@ import projectOneImg from "../assets/project1.png";
 import projectTwoImg from "../assets/projec2.png";
 import projectThreeImg from "../assets/project3.png";
 import projectFour from "../assets/project4.png";
-
+import projectFive from "../assets/project5.png";
 const projects = [
   {
     title: "Chatify",
@@ -41,6 +41,14 @@ const projects = [
     liveLink: "https://nirbhayportfolio.vercel.app/",
     githubLink: "https://github.com/NirbhaySingh74/portfoio",
     imageUrl: projectFour,
+  },
+  {
+    title: "Npmjs",
+    description: "Built NpmJs Clone",
+    techStack: "React, Tailwind",
+    liveLink: "https://npmjss.vercel.app/",
+    githubLink: "https://github.com/NirbhaySingh74/npmjs",
+    imageUrl: projectFive,
   },
 ];
 
