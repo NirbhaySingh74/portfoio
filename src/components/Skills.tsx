@@ -6,9 +6,10 @@ const skills = {
     "HTML",
     "CSS",
     "JavaScript",
-    "React",
+    "React.js",
     "Tailwind CSS",
     "TypeScript",
+    "Next.js",
   ],
   backend: [
     "Node.js",
