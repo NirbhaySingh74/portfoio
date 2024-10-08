@@ -80,6 +80,7 @@ const Contact: React.FC = () => {
               type="text"
               name="name"
               id="name"
+              placeholder="john doe"
               value={formState.name}
               onChange={handleChange}
               required
@@ -98,6 +99,7 @@ const Contact: React.FC = () => {
               type="email"
               name="email"
               id="email"
+              placeholder="johndoe@gmail.com"
               value={formState.email}
               onChange={handleChange}
               required
@@ -115,6 +117,7 @@ const Contact: React.FC = () => {
             <textarea
               name="message"
               id="message"
+              placeholder="enter message"
               rows={5}
               value={formState.message}
               onChange={handleChange}
