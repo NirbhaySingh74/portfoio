@@ -108,15 +108,6 @@ const Header: React.FC = () => {
                 Contact
               </a>
             </li>
-
-            <li className="py-2 md:py-0">
-              <a
-                href="#chat"
-                className="block py-2 hover:text-indigo-500 transition duration-300"
-              >
-                Chat
-              </a>
-            </li>
           </ul>
         </nav>
 
