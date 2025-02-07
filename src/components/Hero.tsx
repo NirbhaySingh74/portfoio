@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
         <span className="text-indigo-500">Full Stack Developer</span>
       </motion.p>
       <motion.a
-        href="https://drive.google.com/file/d/19q_Ex0P3hE1zH8QA0bhSiEexKri5taVy/view?usp=sharing"
+        href="https://drive.google.com/file/d/1QHJll60ClKZ--Vo3Z57C2nPk4XtVBRqf/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-indigo-500 text-white font-semibold px-8 py-3 rounded-full shadow-md hover:bg-indigo-600 transition duration-300"

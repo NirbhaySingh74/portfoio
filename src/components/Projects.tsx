@@ -7,12 +7,12 @@ import projectFour from "../assets/project4.png";
 import projectFive from "../assets/project5.png";
 const projects = [
   {
-    title: "Chatify",
+    title: "ProductPitch",
     description:
-      "Developed chat app which allows users to chat with prople and see their online status",
-    techStack: "React, Tailwind, Node.js, Express, MongoDB, Socket.io",
-    liveLink: "https://chatify-teal.vercel.app/",
-    githubLink: "https://github.com/NirbhaySingh74/MERN-CHAT-APP",
+      "A dynamic platform for discovering and submitting startup ideas",
+    techStack: "Next.js, Sanity CMS, NextAuth, Tailwind CSS, Shadcn",
+    liveLink: "https://yc-directory-rosy.vercel.app/",
+    githubLink: "https://github.com/NirbhaySingh74/ProductPitch",
     imageUrl: projectOneImg,
   },
   {
